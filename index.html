@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Optional theme -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" type="text/css" href="css/swiper.css">
+    <link rel="stylesheet" type="text/css" href="css/slider.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>Kampus Indonesia</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-custom">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <img src="img/logo.png" alt="Logo Kampus Indonesia">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link font-weight-bold" href="#">Beranda<span></span></a>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link font-weight-bold dropdown-toggle" href="#about" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">Fitur</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href=""><span class="item-text">Info Kampus</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href=""><span class="item-text">Info Beasiswa</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href=""><span class="item-text">Info Lomba</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href=""><span class="item-text">Info Volunteer</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href=""><span class="item-text">Info Webinar</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href=""><span class="item-text">UTBK</span></a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link font-weight-bold" href="">Hubungi Kami</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link font-weight-bold" href="">Masuk</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link font-weight-bold btn btn-primary" href="#" data-toggle="modal" data-target="#exampleModal">Daftar</a>
+                </li>
+              </ul>
+            </div> 
+          </div>
+        </nav>
+    </header>
+    <!-- end of Navbar-->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Kampus Indonesia</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+          <div class="container">
+              <div class="row py-3 align-items-center">
+                  <!-- For Demo Purpose -->
+                  <div class="col-md-5 pr-lg-5 mb-5 mb-md-0">
+                      <img src="img/login.svg" alt="" class="img-fluid mb-3 d-none d-md-block">
+                      <h1>Buat Akun Baru</h1>
+                    
+                  </div>
+
+                  <!-- Registeration Form -->
+                  <div class="col-md-7 col-lg-6 ml-auto">
+                      <form action="#">
+                          <div class="row">
+
+                              <!-- First Name -->
+                              <div class="input-group col-lg-6 mb-4">
+                                  <div class="input-group-prepend">
+                                      <span class="input-group-text bg-white px-4 border-md border-right-0">
+                                          <i class="fa fa-user text-muted"></i>
+                                      </span>
+                                  </div>
+                                  <input id="firstName" type="text" name="firstname" placeholder="Nama Depan" class="form-control bg-white border-left-0 border-md">
+                              </div>
+
+                              <!-- Last Name -->
+                              <div class="input-group col-lg-6 mb-4">
+                                  <div class="input-group-prepend">
+                                      <span class="input-group-text bg-white px-4 border-md border-right-0">
+                                          <i class="fa fa-user text-muted"></i>
+                                      </span>
+                                  </div>
+                                  <input id="lastName" type="text" name="lastname" placeholder="Nama Belakang" class="form-control bg-white border-left-0 border-md">
+                              </div>
+
+                              <!-- Email Address -->
+                              <div class="input-group col-lg-12 mb-4">
+                                  <div class="input-group-prepend">
+                                      <span class="input-group-text bg-white px-4 border-md border-right-0">
+                                          <i class="fa fa-envelope text-muted"></i>
+                                      </span>
+                                  </div>
+                                  <input id="email" type="email" name="email" placeholder="Alamat Email" class="form-control bg-white border-left-0 border-md">
+                              </div>
+
+                              <!-- Phone Number -->
+                              <div class="input-group col-lg-12 mb-4">
+                                  <div class="input-group-prepend">
+                                      <span class="input-group-text bg-white px-4 border-md border-right-0">
+                                          <i class="fa fa-phone-square text-muted"></i>
+                                      </span>
+                                  </div>
+                                  <select id="countryCode" name="countryCode" style="max-width: 80px" class="custom-select form-control bg-white border-left-0 border-md h-100 font-weight-bold text-muted">
+                                      <option value="">+12</option>
+                                      <option value="">+10</option>
+                                      <option value="">+63</option>
+                                      <option value="">+62</option>
+                                  </select>
+                                  <input id="phoneNumber" type="tel" name="phone" placeholder="Nomer Telepon" class="form-control bg-white border-md border-left-0 pl-3">
+                              </div>.
+
+
+                              <!-- Job -->
+                              <div class="input-group col-lg-12 mb-4">
+                                  <div class="input-group-prepend">
+                                      <span class="input-group-text bg-white px-4 border-md border-right-0">
+                                          <i class="fa fa-black-tie text-muted"></i>
+                                      </span>
+                                  </div>
+                                  <select id="job" name="jobtitle" class="form-control custom-select bg-white border-left-0 border-md">
+                                      <option value="">Pilih Pekerjaan</option>
+                                      <option value="">Designer</option>
+                                      <option value="">Developer</option>
+                                      <option value="">Manager</option>
+                                      <option value="">Accountant</option>
+                                  </select>
+                              </div>
+
+                              <!-- Password -->
+                              <div class="input-group col-lg-6 mb-4">
+                                  <div class="input-group-prepend">
+                                      <span class="input-group-text bg-white px-4 border-md border-right-0">
+                                          <i class="fa fa-lock text-muted"></i>
+                                      </span>
+                                  </div>
+                                  <input id="password" type="password" name="password" placeholder="Password" class="form-control bg-white border-left-0 border-md">
+                              </div>
+
+                              <!-- Password Confirmation -->
+                              <div class="input-group col-lg-6 mb-4">
+                                  <div class="input-group-prepend">
+                                      <span class="input-group-text bg-white px-4 border-md border-right-0">
+                                          <i class="fa fa-lock text-muted"></i>
+                                      </span>
+                                  </div>
+                                  <input id="passwordConfirmation" type="text" name="passwordConfirmation" placeholder="Konfirmasi Password" class="form-control bg-white border-left-0 border-md">
+                              </div>
+
+                              <!-- Submit Button -->
+                              <div class="form-group col-lg-12 mx-auto mb-0">
+                                  <a href="#" class="btn btn-primary btn-block py-2">
+                                      <span class="font-weight-bold">Buat Akun Baru</span>
+                                  </a>
+                              </div>
+
+                              <!-- Divider Text -->
+                              <div class="form-group col-lg-12 mx-auto d-flex align-items-center my-4">
+                                  <div class="border-bottom w-100 ml-5"></div>
+                                  <span class="px-2 small text-muted font-weight-bold text-muted">Atau</span>
+                                  <div class="border-bottom w-100 mr-5"></div>
+                              </div>
+
+                              <!-- Social Login -->
+                              <div class="form-group col-lg-12 mx-auto">
+                                  <a href="#" class="btn btn-primary btn-block py-2 btn-facebook">
+                                      <i class="fa fa-facebook-f mr-2"></i>
+                                      <span class="font-weight-bold">Masuk dengan Facebook</span>
+                                  </a>
+                                  <a href="#" class="btn btn-primary btn-block py-2 btn-twitter">
+                                      <i class="fa fa-twitter mr-2"></i>
+                                      <span class="font-weight-bold">Masuk dengan Twitter</span>
+                                  </a>
+                              </div>
+
+                              <!-- Already Registered -->
+                              <div class="text-center w-100">
+                                  <p class="text-muted font-weight-bold">Sudah Punya Akun? <a href="#" class="text-primary ml-2">Masuk</a></p>
+                              </div>
+
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- end of modal -->
+
+    <main>
+      <!-- jumbotron -->
+      <section>
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+            <div class="row mt-5">
+              <div class="col-lg-6 mt-5" data-aos="fade-right" data-aos-delay="50" data-aos-duration="500" data-aos-easing="ease-in-back">
+                <div class="text-container">
+                  <h1 class="text-body display-5"><span class="turquoise">Kampus Indonesia</span> <br> Layanan Informasi Terbaik</h1>
+                  <p class="p-large">Bingung cari informasi tentang dunia perkuliahan? Cari disini aja, kami menyediakan segala info yang kamu butuhkan mulai dari beasiswa, bootcamp, webinar, hingga artikel menarik seputar kampus impian yang kamu impikan.</p>
+                  <a class="btn-solid-lg mt-3" href="#">DISCOVER</a>
+                </div>
+              </div>
+              <div class="col-lg-6" data-aos="fade-left" data-aos-delay="50" data-aos-duration="500" data-aos-easing="ease-out-quad">
+                <div class="image-container">
+                  <img class="img-fluid" src="img/header-teamwork.svg">
+                </div>
+              </div>            
+            </div>
+          </div>
+          <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-9 d-flex justify-content-center">
+                    <div class="card position-absolute shadow" data-aos="flip-up" data-aos-delay="50" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-anchor-placement="center-center">
+                      <h2 class="heading text-center">
+                        <a href="" style="color: #00bfd8;" class="typewrite" data-period="2000" data-type='[ "Info Apa Yang Kamu Butuhkan?.", "Cukup tulis di kolom pencarian", "Semua akan ditampilkan lebih detail", "Tunggu apalagi, langsung coba aja." ]'>
+                          <span class="wrap"></span>
+                        </a>
+                      </h2>
+                        <div class="d-flex justify-content-center px-5">
+                            <div class="search"> <input type="text" class="search-input" placeholder="Search..." name=""> <a href="#" class="search-icon"> <i class="fa fa-search"></i> </a> </div>
+                        </div>
+                        <div class="row mt-3 g-1 px-4 mb-3">
+                            <div class="col-md-2">
+                                <div class="card-inner p-3 d-flex flex-column align-items-center"> <img src="img/scholarship.svg" width="50">
+                                    <div class="text-center mg-text"> <span class="mg-text">Beasiswa</span> </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="card-inner p-3 d-flex flex-column align-items-center"> <img src="img/event.svg" width="50">
+                                    <div class="text-center mg-text"> <span class="mg-text">Events</span> </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="card-inner p-3 d-flex flex-column align-items-center"> <img src="img/bootcamp.svg" width="50">
+                                    <div class="text-center mg-text"> <span class="mg-text">Bootcamp</span> </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="card-inner p-3 d-flex flex-column align-items-center"> <img src="img/webinar.svg" width="50">
+                                    <div class="text-center mg-text"> <span class="mg-text">UTBK</span> </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="card-inner p-3 d-flex flex-column align-items-center"> <img src="img/volunteer.svg" width="50">
+                                    <div class="text-center mg-text"> <span class="mg-text">Volunteer</span> </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="card-inner p-3 d-flex flex-column align-items-center"> <img src="img/internship.svg" width="50">
+                                    <div class="text-center mg-text"> <span class="mg-text">Internship</span> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end of jumbotron -->
+
+      <!-- kampus slider -->
+      <section class="position-relative">
+        <div id="particles-js"></div>
+        <div class="kampus-slider pb-5">
+          <div class="container">
+            <div class="row">
+                <div class="col-md-4 d-flex align-items-center text-light">
+                  <div class="card bg-primary shadow" data-aos="zoom-out-right" data-aos-delay="50" data-aos-duration="500" data-aos-easing="ease-in-cubic" data-aos-anchor-placement="top-center">
+                      <div class="card-body">
+                        <h3 class="card-title font-weight-bold">Website Untuk Mencari Informasi Seputar Kuliah</h3>
+                        <p class="card-text text-light">Kamu bisa mencari dan membandingkan kampus terpopuler dari segi prestasi akademik maupun non akademik. Info lengkap mengenai perguruan tinggi dapat dicari langsung disini. Ketahui juga standart nilai utbk untuk masuk ke ptn impian, jangan sampai salah langkah. Tentukan jurusan dan kampusmu mulai dari sekarang! Selaraskan dengan minat dan bakat serta kemampuan, cari informasi lebih banyak agar wawasanmu bertambah.</p>
+                        <a href="#" class="btn btn-light d-flex justify-content-center text-uppercase font-weight-bolder mt-3">Cari Kampus Lainnya</a>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-lg-8 ml-auto">
+                  <div class="row">
+                    <div class="col-md-12 d-flex justify-content-between ml-auto align-items-center">
+                      <h3>Rekomendasi Kampus Terbaik</h3>
+                      <h6><a href="https://kampusindonesia.co.id" class="text-light">Lihat Kampus Lain <i class="bi bi-arrow-right-short">></i></a></h6>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                            <div id="news-slider" class="owl-carousel d-flex justify-content-around">
+                              <div class="card post-slide">
+                                <div class="pic">
+                                <img src="img/ui.png" class="card-img-top" alt="...">
+                                <ul class="post-category">
+                                          <li><a href="#">Akreditasi : A</a></li>
+                                      </ul>
+                                </div>
+                                <div class="card-body ">
+                                  <h5 class="card-title">Universitas Indonesia</h5>
+                                  <p class="card-subtitle mb-2 text-muted"><img src="img/medal.png" class=".img-fluid">Negeri</p>
+                                  <a href="#" class="btn btn-primary d-flex justify-content-center">Lihat Detail</a>
+                                </div>
+                              </div>
+                              <div class="card post-slide">
+                                <div class="pic">
+                                <img src="img/ub.png" class="card-img-top" alt="...">
+                                <ul class="post-category">
+                                          <li><a href="#">Akreditasi : A</a></li>
+                                          <!-- <li><a href="#">css</a></li> -->
+                                      </ul>
+                                </div>
+                                <div class="card-body ">
+                                  <h5 class="card-title">Universitas Brawijaya</h5>
+                                  <p class="card-subtitle mb-2 text-muted"><img src="img/medal.png" class=".img-fluid">Negeri</p>
+                                  <a href="#" class="btn btn-primary d-flex justify-content-center">Lihat Detail</a>
+                                </div>
+                              </div>
+                              <div class="card post-slide">
+                                <div class="pic">
+                                <img src="img/unair.png" class="card-img-top" alt="...">
+                                <ul class="post-category">
+                                          <li><a href="#">Akreditasi : B</a></li>
+                                      </ul>
+                                </div>
+                                <div class="card-body ">
+                                  <h5 class="card-title">Universitas Airlangga</h5>
+                                  <p class="card-subtitle mb-2 text-muted"><img src="img/medal.png" class=".img-fluid">Negeri</p>
+                                  <a href="#" class="btn btn-primary d-flex justify-content-center">Lihat Detail</a>
+                                </div>
+                              </div>
+                              <div class="card post-slide">
+                                <div class="pic">
+                                <img src="img/um.png" class="card-img-top" alt="...">
+                                <ul class="post-category">
+                                          <li><a href="#">Akreditasi : A</a></li>
+                                      </ul>
+                                </div>
+                                <div class="card-body ">
+                                  <h5 class="card-title">Universitas Malang</h5>
+                                  <p class="card-subtitle mb-2 text-muted"><img src="img/medal.png" class=".img-fluid">Negeri</p>
+                                  <a href="#" class="btn btn-primary d-flex justify-content-center">Lihat Detail</a>
+                                </div>
+                              </div>
+                              <div class="card post-slide">
+                                <div class="pic">
+                                <img src="img/telkom.png" class="card-img-top" alt="...">
+                                <ul class="post-category">
+                                          <li><a href="#">Akreditasi : A</a></li>
+                                      </ul>
+                                </div>
+                                <div class="card-body ">
+                                  <h5 class="card-title">Universitas Telkom</h5>
+                                  <p class="card-subtitle mb-2 text-muted"><img src="img/medal.png" class=".img-fluid">Negeri</p>
+                                  <a href="#" class="btn btn-primary d-flex justify-content-center">Lihat Detail</a>
+                                </div>
+                              </div>
+                            </div>                                                 
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end of kampus slider -->
+
+      <!-- banner 1 -->
+      <section>
+        <div class="basic-1">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6" data-aos="slide-up" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-center">
+                        <div class="text-container text-body">
+                            <h2 class="font-weight-bold">Perlu Info Magang/Intern?</h2>
+                            <p>Ketahui start up maupun perusahaan yang sedang membutuhkanmu untuk magang, pilih yang sesuai dengan passion kamu. Segera daftar dan dapatkan pengalaman luar biasa di dunia industri era digital. </p>
+                            <a class="btn-solid-lg mt-3" href="https://kampusindonesia.com/internship">Cari Lowongan</a>
+                        </div> 
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="image-container">
+                            <img class="img-fluid" src="img/details-1-office-worker.svg" alt="alternative">
+                        </div> 
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of basic-1 -->
+      </section>
+      <!-- end of banner 1 -->
+
+      <!-- fitur summary -->
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5">
+                <a class="remove-style-link" href="https://www.kampusindonesia.co.id/events">
+                    <span class="text-black" style="font-weight: 500">Pintara Competition</span>
+                </a>
+                <h2 class="mb-4 mt-3">Competition</h2>
+                <p class="mb-lg-5 pb-lg-3">Berikut adalah beberapa kompetisi yang akan diselenggarakan dalam waktu dekat</p>
+                <div class="d-none d-lg-block mt-5">
+                    <a href="https://www.kampusindonesia.co.id/events" class="btn btn-primary shadow">Lihat Lomba</a>
+                </div>
+            </div>
+            <div class="col-lg-7">
+              <div class="row">
+                <div class="col-md-6" data-aos="zoom-in-up" data-aos-delay="50" data-aos-duration="500" data-aos-easing="ease-in-out">
+                  <div class="card card-custom">
+                    <a href="img/competition_1.png">
+                    <img class="card-img-top" src="img/competition_1.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">𝐍𝐀𝐓𝐈𝐎𝐍𝐀𝐋 𝐄𝐒𝐒𝐀𝐘 𝐂𝐎𝐌𝐏𝐄𝐓𝐈𝐓𝐈𝐎𝐍.</h5>
+                      <p class="card-text">
+                        Teruntuk kalian yang suka dengan dunia kepenulisan, inilah saatnya untuk menuangkan ide tersebut ke dalam bentuk essay dan menangkan hadiahnya!!       
+                      </p>
+                      <p class="card-text"><small class="text-muted"><img src="img/eye-fill.svg" alt="" width="16" height="16" title="Bootstrap"> 1000 <img src="img/person.svg" alt="" width="16" height="16" title="Bootstrap"> admin <img src="img/date.svg" alt="" width="16" height="16" title="Bootstrap"> Feb 5, 2021</small></p>
+                    </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-6" data-aos="zoom-out-down" data-aos-delay="50" data-aos-duration="500" data-aos-easing="ease-in-out">
+                  <div class="card card-custom">
+                    <a href="img/competition_2.png">
+                    <img class="card-img-top" src="img/competition_2.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">KOMPETISI DESAIN POSTER</h5>
+                      <p class="card-text">
+                        Yuk, ikutan “Kompetisi Desain Poster #BangkitDariPandemi” dengan memberikan ide dan kreativitasmu mengenai permasalahan bangkit dari pandemi yang ada di sekitarmu.       
+                      </p>
+                      <p class="card-text"><small class="text-muted"><img src="img/eye-fill.svg" alt="" width="16" height="16" title="Bootstrap"> 1000 <img src="img/person.svg" alt="" width="16" height="16" title="Bootstrap"> admin <img src="img/date.svg" alt="" width="16" height="16" title="Bootstrap"> Jan 20, 2021</small></p>
+                    </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div> 
+          </div>
+          <div class="row mt-3">
+            <div class="col-lg-5">
+                <a class="remove-style-link" href="https://www.kampusindonesia.co.id/volunteer">
+                    <span class="text-black" style="font-weight: 500">Pintara Volunteer</span>
+                </a>
+                <h2 class="mb-4 mt-3">Volunteer</h2>
+                <p class="mb-lg-5 pb-lg-3">Berikut adalah beberapa kegiatan volunteer yang akan diselenggarakan dalam waktu dekat</p>
+                <div class="d-none d-lg-block mt-5">
+                    <a href="https://www.kampusindonesia.co.id/volunteer" class="btn btn-primary shadow">Lihat Volunteer</a>
+                </div>
+            </div>
+            <div class="col-lg-7">
+              <div class="row">
+                <div class="col-md-6" data-aos="flip-left" data-aos-delay="50" data-aos-duration="500" data-aos-easing="ease-in-out">
+                  <div class="card card-custom-volunteer bg-white border-white border-0">
+                    <div class="card-custom-img" style="background-image: url(img/volunteer_1.jpg);"></div>
+                    <div class="card-custom-avatar">
+                      <img class="img-fluid" src="img/volunteer_1_logo.jpg" alt="Avatar" />
+                    </div>
+                    <div class="card-body" style="overflow-y: auto">
+                      <h4 class="card-title">Ruang Berproses</h4>
+                      <p class="card-text">Hola kawula muda pejuang kesehatan mental 👋😊
+                        Ruang Berproses sedang OPEN RECRUITMENT VOLUNTEER BATCH-II 🔥🔥 <a href="img/volunteer_1.jpg" target="_blank">cek disini</a> untuk info pendaftaran</p>
+                    </div>
+                    <div class="card-footer" style="background: inherit; border-color: inherit;">
+                      <a href="img/volunteer_1.jpg" class="btn btn-primary">Daftar</a>
+                      <a href="img/volunteer_1.jpg" class="btn btn-outline-primary">Detail</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6" data-aos="flip-right" data-aos-delay="50" data-aos-duration="500" data-aos-easing="ease-in-out">
+                  <div class="card card-custom-volunteer bg-white border-white border-0">
+                    <div class="card-custom-img" style="background-image: url(img/volunteer_2.jpg);"></div>
+                    <div class="card-custom-avatar">
+                      <img class="img-fluid" src="img/volunteer_2_logo.jpg" alt="Avatar" />
+                    </div>
+                    <div class="card-body" style="overflow-y: auto">
+                      <h4 class="card-title">Alopet</h4>
+                      <p class="card-text">Suka nulis & design?😸 Yuk, bergabung ke dalam program volunteer kontributor Alo Pet!<a href="img/volunteer_2.jpg">Cek disini</a> untuk pendaftaran volunteer</p>
+                    </div>
+                    <div class="card-footer" style="background: inherit; border-color: inherit;">
+                      <a href="img/volunteer_2.jpg" class="btn btn-primary">Daftar</a>
+                      <a href="img/volunteer_2.jpg" class="btn btn-outline-primary">Detail</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> 
+          </div>
+          <div class="row mt-3">
+            <div class="col-lg-5">
+                <a class="remove-style-link" href="https://www.kampusindonesia.co.id/bootcamp">
+                    <span class="text-black" style="font-weight: 500">Pintara Bootcamp</span>
+                </a>
+                <h2 class="mb-4 mt-3">Bootcamp</h2>
+                <p class="mb-lg-5 pb-lg-3">Berikut adalah beberapa kegiatan bootcamp yang akan diselenggarakan dalam waktu dekat</p>
+                <div class="d-none d-lg-block mt-5">
+                    <a href="https://www.kampusindonesia.co.id/bootcamp" class="btn btn-primary shadow">Lihat Bootcamp</a>
+                </div>
+            </div>
+            <div class="col-lg-7">
+              <div class="row">
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500" data-aos-easing="ease-in-out">
+                  <div class="profile-card-4 text-center"><img src="img/camp404.jpg" class="img img-responsive">
+                      <div class="profile-content">
+                          <div class="profile-name">Camp 404
+                              <p>@camp404.id</p>
+                          </div>
+                          <div class="profile-description">Cara belajar cepat dan efektif tanpa perlu latar belakang IT. Segera daftarkan dalam program Batch 4, gratis!</div>
+                          <div class="row justify-content-around">
+                              <div class="col-xs-4">
+                                  <div class="profile-overview">
+                                      <p>Dilihat</p>
+                                      <h4>1300</h4></div>
+                              </div>
+                              <div class="col-xs-4">
+                                  <div class="profile-overview">
+                                      <p>Dibagikan</p>
+                                      <h4>250</h4></div>
+                              </div>
+                              <div class="col-xs-4">
+                                  <div class="profile-overview">
+                                      <p>Pendaftar</p>
+                                      <h4>168</h4></div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="80" data-aos-duration="800" data-aos-easing="ease-in-out">
+                  <div class="profile-card-4 text-center"><img src="img/bootcamp_1.jpg">
+                      <div class="profile-content">
+                          <div class="profile-name">Codepolitan
+                              <p>@codepolitan</p>
+                          </div>
+                          <div class="profile-description"> Codepolitan memiliki pelatihan khusus membuat aplikasi android with kotlin selama lima hari</div>
+                          <div class="row justify-content-around">
+                              <div class="col-xs-4">
+                                  <div class="profile-overview">
+                                      <p>Dilihat</p>
+                                      <h4>1300</h4></div>
+                              </div>
+                              <div class="col-xs-4">
+                                  <div class="profile-overview">
+                                      <p>Dibagikan</p>
+                                      <h4>250</h4></div>
+                              </div>
+                              <div class="col-xs-4">
+                                  <div class="profile-overview">
+                                      <p>Pendaftar</p>
+                                      <h4>168</h4></div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </section>
+      <!-- end of fitur summary -->
+
+      <!-- banner 2 -->
+      <section>
+        <!-- Details 2 -->
+        <div class="basic-2">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="image-container">
+                            <img class="img-fluid" src="img/details-2-office-team-work.svg" alt="details-2-office-team-work">
+                        </div> <!-- end of image-container -->
+                    </div> <!-- end of col -->
+                    <div class="col-lg-6"data-aos="slide-down" data-aos-delay="50" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-center">
+                        <div class="text-container">
+                            <h2>Dapatkan Info Beasiswa Terbaru</h2>
+                            <ul class="list-unstyled li-space-lg">
+                                <li class="media">
+                                    &check;
+                                    <div class="media-body">Informasi lengkap dan detail secara uptodate untuk kamu.</div>
+                                </li>
+                                <li class="media">
+                                    &check;
+                                    <div class="media-body">Tidak hanya beasiswa untuk pendidikan namun juga pelatihan, penelitian dan banyak lagi.</div>
+                                </li>
+                                <li class="media">
+                                    &check;
+                                    <div class="media-body">Cakupan info beasiswa dari dalam hingga luar negeri</div>
+                                </li>
+                            </ul>
+                            <a class="btn-solid-lg mt-3" href="https://kampusindonesia.com/beasiswa">Cari Beasiswa</a>
+                        </div> <!-- end of text-container -->
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of basic-2 -->
+        <!-- end of details 2 -->
+      </section>
+      <!-- end of banner 2 -->
+
+      <!-- artikel -->
+      <section>
+        <div class="container">
+          <div class="row py-5">
+            <div class="col-lg-12 mx-auto">
+              <div class="text-white p-5 shadow-sm rounded banner">
+                <h1 class="display-4">Artikel Terbaru Kampus</h1>
+                <p class="lead">Jangan sampai terlewat informasi dari kampus favoritmu</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-3 col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500" data-aos-easing="ease-in-out">
+              <div class="bg-white rounded shadow-sm"><img src="img/artikel1.jpg" alt="" class="img-fluid card-img-top">
+                <div class="p-4">
+                  <h5> <a href="#" class="text-dark">Tips Memilih Jurusan Kuliah</a></h5>
+                  <p class="small text-muted mb-0">Jangan sampai kamu salah memilih jurusan kuliah</p>
+                  <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                    <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">Read...</span></p>
+                    <div class="badge badge-danger px-3 rounded-pill font-weight-normal">New</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End -->
+
+            <!-- Gallery item -->
+            <div class="col-xl-3 col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="50" data-aos-duration="800" data-aos-easing="ease-in-out">
+              <div class="bg-white rounded shadow-sm"><img src="img/artikel1.jpg" alt="" class="img-fluid card-img-top">
+                <div class="p-4">
+                  <h5> <a href="#" class="text-dark">Cara Produktif Selama Pandemi</a></h5>
+                  <p class="small text-muted mb-0">Ketika pandemi kebanyakan orang hanya bermalas-malasan</p>
+                  <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                    <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">Read...</span></p>
+                    <div class="badge badge-primary px-3 rounded-pill font-weight-normal">Trend</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End -->
+
+            <!-- Gallery item -->
+            <div class="col-xl-3 col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="50" data-aos-duration="800" data-aos-easing="ease-in-out">
+              <div class="bg-white rounded shadow-sm"><img src="img/artikel1.jpg" alt="" class="img-fluid card-img-top">
+                <div class="p-4">
+                  <h5> <a href="#" class="text-dark">Langkah Cepat Atasi Stress</a></h5>
+                  <p class="small text-muted mb-0">Lakukan hal berikut jika kamu sedang stress</p>
+                  <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                    <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">Read...</span></p>
+                    <div class="badge badge-warning px-3 rounded-pill font-weight-normal text-white">Featured</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End -->
+
+            <!-- Gallery item -->
+            <div class="col-xl-3 col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500" data-aos-easing="ease-in-out">
+              <div class="bg-white rounded shadow-sm"><img src="img/artikel1.jpg" alt="" class="img-fluid card-img-top">
+                <div class="p-4">
+                  <h5> <a href="#" class="text-dark">Perbedaan Ormawa dan UKM</a></h5>
+                  <p class="small text-muted mb-0">Tau nggak sih bedanya ormawa dengan UKM?</p>
+                  <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                    <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">Read...</span></p>
+                    <div class="badge badge-success px-3 rounded-pill font-weight-normal">Hot</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End -->
+
+            <!-- Gallery item -->
+            <div class="col-xl-3 col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500" data-aos-easing="ease-in-out">
+              <div class="bg-white rounded shadow-sm"><img src="https://www.filemagz.com/wp-content/uploads/2018/06/153037-OU5TBK-457-933x445.jpg" alt="" class="img-fluid card-img-top">
+                <div class="p-4">
+                  <h5> <a href="#" class="text-dark">Trik Belajar Ilmu Matematika</a></h5>
+                  <p class="small text-muted mb-0">Ternyata matematika itu menyenangkan jika kamu sudah terbiasa</p>
+                  <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                    <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">Read...</span></p>
+                    <div class="badge badge-primary px-3 rounded-pill font-weight-normal">New</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End -->
+
+            <!-- Gallery item -->
+            <div class="col-xl-3 col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="50" data-aos-duration="800" data-aos-easing="ease-in-out">
+              <div class="bg-white rounded shadow-sm"><img src="img/artikel2.jpg" alt="" class="img-fluid card-img-top">
+                <div class="p-4">
+                  <h5> <a href="#" class="text-dark">Prospek Kerja Yang Banyak Diminati</a></h5>
+                  <p class="small text-muted mb-0">Inilah 10 prospek kerja yang paling banyak diminati</p>
+                  <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                    <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">Read...</span></p>
+                    <div class="badge badge-warning px-3 rounded-pill font-weight-normal text-white">Featured</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End -->
+
+            <!-- Gallery item -->
+            <div class="col-xl-3 col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="50" data-aos-duration="800" data-aos-easing="ease-in-out">
+              <div class="bg-white rounded shadow-sm"><img src="img/artikel2.jpg" alt="" class="img-fluid card-img-top">
+                <div class="p-4">
+                  <h5> <a href="#" class="text-dark">Investasi Masa Depan Ketika Kuliah</a></h5>
+                  <p class="small text-muted mb-0">Kamu bisa lho investasi saham saat masih kuliah</p>
+                  <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                    <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">Read...</span></p>
+                    <div class="badge badge-info px-3 rounded-pill font-weight-normal">Hot</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End -->
+            <!-- Gallery item -->
+            <div class="col-xl-3 col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500" data-aos-easing="ease-in-out">
+              <div class="bg-white rounded shadow-sm"><img src="img/artikel2.jpg" alt="" class="img-fluid card-img-top">
+                <div class="p-4">
+                  <h5> <a href="#" class="text-dark">Pentingnya Magang Selama Kuliah</a></h5>
+                  <p class="small text-muted mb-0">Jangan lupa magang ketika masih kuliah kalau tidak ingin kalah bersaing</p>
+                  <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                    <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">Read...</span></p>
+                    <div class="badge badge-info px-3 rounded-pill font-weight-normal">Hot</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End -->
+          </div>
+        </div>
+      </section>
+      <!-- partner -->
+      <section>
+       <!-- Customers -->
+        <div class="slider-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h3>Bekerja Sama Dengan</h3>
+                        
+                        <!-- Image Slider -->
+                        <div class="slider-container">
+                            <div class="swiper-container image-slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="image-container">
+                                            <img class="img-responsive" width="200px" src="img/umbaru.png" alt="alternative">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="image-container">
+                                            <img class="img-responsive" width="200px" src="img/ubbaru.png" alt="alternative">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="image-container">
+                                            <img class="img-responsive" width="200px" src="img/uibaru.png" alt="alternative">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="image-container">
+                                            <img class="img-responsive" width="200px" src="img/telkombaru.png" alt="alternative">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="image-container">
+                                            <img class="img-responsive" width="200px" src="img/unairbaru.png" alt="alternative">
+                                        </div>
+                                    </div>
+                        
+                                </div> <!-- end of swiper-wrapper -->
+                            </div> <!-- end of swiper container -->
+                        </div> <!-- end of slider-container -->
+                        <!-- end of image slider -->
+
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of slider-1 -->
+        <!-- end of customers -->
+      </section>
+      <!-- end pf partner -->
+
+      <!-- join banner -->
+      <section>
+        <div class="container-fluid join-custom">
+          <div class="container text-center py-5">
+            <h2><b>Bergabung Gratis Selamanya!</b></h2>
+            <a href="" class="btn btn-lg btn-primary shadow mt-5" data-toggle="modal" data-target="#exampleModal">BUAT AKUN!</a>
+        </div>
+        </div>
+      </section>
+      <!-- end of join banner -->
+    </main>
+    <footer id="dk-footer" class="dk-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-lg-4" data-aos="zoom-in-up" data-aos-delay="50" data-aos-duration="500" data-aos-easing="ease-in-out">
+                        <div class="dk-footer-box-info">
+                            <a href="index.html" class="footer-logo">
+                                <img src="img/logo.png" alt="footer_logo" class="img-fluid">
+                            </a>
+                            <p class="footer-info-text">
+                               Kampus Indonesia merupakan penyedia dan penyalur informasi seputar dunia kampus di indonesia.
+                            </p>
+                            <div class="footer-social-link">
+                                <h3>Follow us</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-google-plus"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-linkedin"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- End Social link -->
+                        </div>
+                        <!-- End Footer info -->
+                        <div class="footer-awarad">
+                            <img src="img/icon/best.png" alt="">
+                            <p> </p>
+                        </div>
+                    </div>
+                    <!-- End Col -->
+                    <div class="col-md-12 col-lg-8">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="contact-us">
+                                    <div class="contact-icon">
+                                        <i class="fa fa-map-o" aria-hidden="true"></i>
+                                    </div>
+                                    <!-- End contact Icon -->
+                                    <div class="contact-info">
+                                        <h3>Malang Jawa Timur</h3>
+                                        <p>5353 Road Avenue</p>
+                                    </div>
+                                    <!-- End Contact Info -->
+                                </div>
+                                <!-- End Contact Us -->
+                            </div>
+                            <!-- End Col -->
+                            <div class="col-md-6">
+                                <div class="contact-us contact-us-last">
+                                    <div class="contact-icon">
+                                        <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+                                    </div>
+                                    <!-- End contact Icon -->
+                                    <div class="contact-info">
+                                        <h3>0333 456 78</h3>
+                                        <p>Hubungi Kami</p>
+                                    </div>
+                                    <!-- End Contact Info -->
+                                </div>
+                                <!-- End Contact Us -->
+                            </div>
+                            <!-- End Col -->
+                        </div>
+                        <!-- End Contact Row -->
+                        <div class="row">
+                            <div class="col-md-12 col-lg-6">
+                                <div class="footer-widget footer-left-widget">
+                                    <div class="section-heading">
+                                        <h3>Useful Links</h3>
+                                        <span class="animate-border border-black"></span>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Tentang Kami</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Layanan</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Artikel</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Team Kami</a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Hubungi Kami</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Blog</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Testimonials</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Faq</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- End Footer Widget -->
+                            </div>
+                            <!-- End col -->
+                            <div class="col-md-12 col-lg-6">
+                                <div class="footer-widget">
+                                    <div class="section-heading">
+                                        <h3>Subscribe</h3>
+                                        <span class="animate-border border-black"></span>
+                                    </div>
+                                    <p>
+                                      Dapatkan notifikasi update feed secara langsung dengan mengisi form dibawah.
+                                   </p>
+                                    <div class="wrapper">
+                                      <input type="checkbox" id="click">
+                                      <label class="btn-1" for="click">Subscribe</label>
+                                      <div class="field">
+                                        <input type="text" placeholder="Email Address">
+                                        <label for="click" class="btn-2">Subscribe</label>
+                                      </div>
+                                </div>
+                                    <!-- End form -->
+                                </div>
+                                <!-- End footer widget -->
+                            </div>
+                            <!-- End Col -->
+                        </div>
+                        <!-- End Row -->
+                    </div>
+                    <!-- End Col -->
+                </div>
+                <!-- End Widget Row -->
+            </div>
+            <!-- End Contact Container -->
+            <div class="copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <span>Copyright © 2020 Kampus Indonesia</span>
+                        </div>
+                        <!-- End Col -->
+                        <div class="col-md-6">
+                            <div class="copyright-menu">
+                                <ul>
+                                    <li>
+                                        <a href="#">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Terms</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Privacy Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- End col -->
+                    </div>
+                    <!-- End Row -->
+                </div>
+                <!-- End Copyright Container -->
+            </div>
+            <!-- End Copyright -->
+    </footer>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/particles.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
