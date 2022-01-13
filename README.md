@@ -1,4 +1,5 @@
 ![Pintara-Web](https://socialify.git.ci/phanatagama/Pintara-Web/image?description=1&forks=1&issues=1&language=1&pulls=1&stargazers=1&theme=Dark)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fphanatagama%2FPintara-Web.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fphanatagama%2FPintara-Web?ref=badge_shield)
 <p align="center">
 <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" />
 <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" />
@@ -37,3 +38,7 @@ Project ini dibuat menggunakan HTML5, CSS3 dan Javascript serta framework bootst
 # Demo
 https://pintara.vercel.app/
 https://sad-joliot-d564fa.netlify.app/
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fphanatagama%2FPintara-Web.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fphanatagama%2FPintara-Web?ref=badge_large)
