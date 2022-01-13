@@ -1,4 +1,5 @@
 ![Pintara-Web](https://socialify.git.ci/phanatagama/Pintara-Web/image?description=1&forks=1&issues=1&language=1&pulls=1&stargazers=1&theme=Dark)
+
 <p align="center">
 <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" />
 <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" />
@@ -40,3 +41,4 @@ The use of particlesJS is a new thing for me, it is useful for giving real anima
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fphanatagama%2FPintara-Web.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fphanatagama%2FPintara-Web?ref=badge_large)
 
 ![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg) [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fphanatagama%2FPintara-Web)
+
